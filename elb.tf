@@ -14,7 +14,7 @@ timeout = 5
 target = "HTTP:80/"
 interval = 30 
 }
-instances = ["$(aws_instance.one.id)","$(aws_instance.two.id)"]
+instances = ["${aws_instance.one.id}", "${aws_instance.two.id}"]
 cross_zone_load_balancing = true
 idle_timeout = 400
 tags = {
